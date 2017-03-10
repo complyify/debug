@@ -1,0 +1,12 @@
+# build
+/dist/
+
+# test
+/coverage/
+
+# npm
+/node_modules/
+/npm-debug.log
+
+# macOS
+.DS_Store
