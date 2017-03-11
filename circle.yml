@@ -1,0 +1,15 @@
+dependencies:
+  override:
+    - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
+    - npm i
+    - npm run compile
+
+test:
+  override:
+    - echo "these are not the tests you're looking for"
+
+deployment:
+  release:
+    tag: /[0-9]+\.[0-9]+\.[0-9]+/
+    commands:
+      - npm publish
