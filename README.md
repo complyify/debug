@@ -1,6 +1,12 @@
-# debug
+# @complyify/debug
 
-Drop in replacement for [debug] that adds the following formatter extensions:
+Drop in replacement for [debug] that adds some additional formatter extensions described below.
+
+## Installation
+
+`npm install @complyify/debug`
+
+## Formatters
 
 `%b` bit array from a number or a buffer
 
