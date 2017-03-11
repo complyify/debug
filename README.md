@@ -29,8 +29,8 @@ const debug = Debug('test:app');
 const buffer = new Buffer(1);
 buffer.fill(0);
 const byte = 0b10101010;
-debug('some buffer as a hex string: %b', buffer);
-debug('some number as a hex string: %b', byte);
+debug('some buffer as a hex string: %h', buffer);
+debug('some number as a hex string: %h', byte);
 ```
 
 results in debug output
