@@ -1,6 +1,6 @@
 {
   "name": "@complyify/debug",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Complyify's debug extensions",
   "main": "dist/index.js",
   "repository": "git@github.com:complyify/debug.git",
