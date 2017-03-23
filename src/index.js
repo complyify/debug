@@ -5,6 +5,6 @@ import Debug from 'debug';
 Debug.formatters.b = v => Buffer.isBuffer(v) ? readBuffer(v) : readByte(v);
 
 /* Adds hex string debug formatter %h */
-Debug.formatters.h = v => v.toString('hex');
+Debug.formatters.h = v => `0x${v.toString('hex')}`;
 
 export default Debug;
