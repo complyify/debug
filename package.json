@@ -7,13 +7,10 @@
   "author": "Sean Bruton <sean@complyify.com>",
   "license": "MIT",
   "scripts": {
-    "check": "yarn lint && yarn test",
     "clean": "rm -rf ./dist",
     "compile": "npm run clean && babel src ${WATCH:+--watch} --source-maps inline --out-dir dist",
-    "compile:watch": "WATCH=true yarn compile",
     "lint": "eslint src test",
-    "test": "mocha ${WATCH:+--watch} ${DEBUGGER:+--inspect --debug-brk} --require @babel/register --recursive --exit",
-    "test:watch": "WATCH=true yarn test"
+    "test": "mocha ${WATCH:+--watch} ${DEBUGGER:+--inspect --debug-brk} --require @babel/register --recursive --exit"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
